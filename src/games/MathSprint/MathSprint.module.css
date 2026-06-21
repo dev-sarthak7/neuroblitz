@@ -1,0 +1,44 @@
+.container { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
+.header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem; }
+.back {
+  background: none; border: 1px solid var(--border-strong); color: var(--text-dim);
+  padding: 0.4rem 0.9rem; border-radius: var(--radius-sm); font-size: 0.85rem;
+  font-family: var(--font-mono); transition: color 0.2s, border-color 0.2s;
+}
+.back:hover { color: var(--secondary); border-color: var(--secondary); }
+.stats {
+  display: flex; gap: 1.5rem; font-size: 0.8rem; font-family: var(--font-mono);
+  color: var(--text-dim); background: var(--bg-card); padding: 0.5rem 1.2rem;
+  border-radius: 999px; border: 1px solid var(--border);
+}
+.stats strong { color: var(--primary); }
+.arena { min-height: 60vh; display: flex; align-items: center; justify-content: center; }
+.center { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; width: 100%; }
+.center h2 { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--primary); text-shadow: 0 0 15px var(--primary-glow); }
+.center p { color: var(--text-muted); }
+.hint { font-size: 0.85rem; font-family: var(--font-mono); color: var(--text-dim); }
+.startBtn {
+  background: var(--warning); color: #412402;
+  padding: 0.8rem 2.2rem; border-radius: var(--radius-sm);
+  font-size: 1rem; font-weight: 600;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.35);
+  transition: opacity 0.2s, transform 0.15s;
+}
+.startBtn:hover { opacity: 0.9; transform: scale(1.03); }
+.timerBar { width: 100%; max-width: 400px; height: 5px; background: var(--bg-hover); border-radius: 3px; overflow: hidden; }
+.timerFill { height: 100%; transition: width 1s linear, background 0.5s; }
+.timerNum { font-size: 1.1rem; font-weight: 600; font-family: var(--font-mono); }
+.question {
+  font-family: var(--font-display); font-size: 3.5rem; font-weight: 800;
+  color: var(--text); letter-spacing: 0.01em;
+}
+.feedbackCorrect { font-size: 2rem; color: var(--success); min-height: 2.5rem; }
+.feedbackWrong { font-size: 2rem; color: var(--danger); min-height: 2.5rem; }
+.feedbackHidden { min-height: 2.5rem; opacity: 0; }
+.input {
+  font-size: 1.5rem; text-align: center; background: var(--bg-card-solid);
+  border: 1px solid var(--border-strong); color: var(--text);
+  padding: 0.75rem 1.5rem; border-radius: var(--radius-sm); width: 200px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.input:focus { border-color: var(--warning); box-shadow: 0 0 15px rgba(251, 191, 36, 0.3); }
